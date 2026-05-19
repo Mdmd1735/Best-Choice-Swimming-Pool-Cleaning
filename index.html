@@ -272,41 +272,1416 @@
         </div>
     </section>
 
+        <!-- TESTIMONIALS: Hardcoded Google Reviews -->
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 md:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-10">
                 <h3 class="text-sm font-bold tracking-[0.3em] text-indigo-700 uppercase mb-4">Client Reviews</h3>
                 <h2 class="text-4xl font-black uppercase">What Dubai Is Saying</h2>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 rounded-3xl p-8">
-                    <div class="text-yellow-400 mb-4 text-sm">★★★★★</div>
-                    <p class="text-gray-700 mb-6 leading-relaxed italic">"Good swimming pool clean service doing the work on time. Very happy with the result — the pool looks amazing."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-[#4338ca] flex items-center justify-center text-white font-black text-sm flex-shrink-0">G</div>
-                        <div><div class="font-black text-sm uppercase tracking-widest">Google Reviewer</div><div class="text-xs text-gray-500 mt-0.5">Dubai</div></div>
-                    </div>
-                </div>
-                <!-- placeholder testimonial — replace with real review -->
-                <div class="bg-gray-50 rounded-3xl p-8">
-                    <div class="text-yellow-400 mb-4 text-sm">★★★★★</div>
-                    <p class="text-gray-700 mb-6 leading-relaxed italic">"Called them at midnight and they had someone at my property within the hour. Pool was green and by the next morning it was crystal clear. Best choice is genuinely the best choice."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-[#4338ca] flex items-center justify-center text-white font-black text-sm flex-shrink-0">F</div>
-                        <div><div class="font-black text-sm uppercase tracking-widest">Faisal A.</div><div class="text-xs text-gray-500 mt-0.5">Dubai South</div></div>
-                    </div>
-                </div>
-                <!-- placeholder testimonial — replace with real review -->
-                <div class="bg-gray-50 rounded-3xl p-8">
-                    <div class="text-yellow-400 mb-4 text-sm">★★★★★</div>
-                    <p class="text-gray-700 mb-6 leading-relaxed italic">"86 reviews and every single one is 5 stars — there's a reason for that. Consistent, professional and always on time. Highly recommended."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-[#4338ca] flex items-center justify-center text-white font-black text-sm flex-shrink-0">N</div>
-                        <div><div class="font-black text-sm uppercase tracking-widest">Noor K.</div><div class="text-xs text-gray-500 mt-0.5">Jumeirah Village Circle</div></div>
-                    </div>
-                </div>
+            <div class="reviews-tabs">
+                <div class="reviews-tab active">All reviews</div>
+                <div class="reviews-tab google-tab"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Google</div>
+            </div>
+            <div class="reviews-aggregate">
+                <span class="agg-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="agg-score">5.0</span>
+                <span class="agg-count">86 reviews</span>
+            </div>
+            <div class="reviews-carousel-wrap">
+                <button class="reviews-nav prev" id="rev-prev" aria-label="Previous">&#8249;</button>
+                <div class="reviews-track-outer">
+                    <div class="reviews-track" id="rev-track">
+
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="We had a very good experience with the team at Best Choice. They restored our pool and did the work super fast and to a very good standard. I would recommend them 👌 …" data-short="We had a very good experience with the team at Best Choice. They restored our pool and did the work super fast and to a very good standard. I would recommend th...">
+                <p class="review-body">We had a very good experience with the team at Best Choice. They restored our pool and did the work super fast and to a very good standard. I would recommend th...</p>
+                <button class="show-more" onclick="toggleReview(this)">Show more</button>
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocI_O9GIUD2neMOWDqxB_tbwrNYcWbYMf5hfi5lrFkrp4qOTvQ=w43-h43-p-rp-mo-ba3-br100" alt="Abbie Stewart" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Abbie Stewart</span>
             </div>
         </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">Edited 5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="The swimming pool was renovated with exceptional craftsmanship and attention to detail. The tiling, waterproofing, and finishing were completed to a very high standard. The team worked efficiently and maintained excellent cleanliness throughout the process. Truly impressed with the quality and professionalism." data-short="The swimming pool was renovated with exceptional craftsmanship and attention to detail. The tiling, waterproofing, and finishing were completed to a very high s...">
+                <p class="review-body">The swimming pool was renovated with exceptional craftsmanship and attention to detail. The tiling, waterproofing, and finishing were completed to a very high s...</p>
+                <button class="show-more" onclick="toggleReview(this)">Show more</button>
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIokrVktIYVSS_GrtS8VHzC-Jih5QPsvzS1IdPUQLt5nS2ZxIw=w43-h43-p-rp-mo-br100" alt="Talat Butt" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">T</div>
+                <span class="review-name">Talat Butt</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Great service! My swimming pool was renovated professionally with new tiles and proper waterproofing. The team worked cleanly and on time. Very satisfied with the results." data-short="Great service! My swimming pool was renovated professionally with new tiles and proper waterproofing. The team worked cleanly and on time. Very satisfied with t...">
+                <p class="review-body">Great service! My swimming pool was renovated professionally with new tiles and proper waterproofing. The team worked cleanly and on time. Very satisfied with t...</p>
+                <button class="show-more" onclick="toggleReview(this)">Show more</button>
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWu60cQLQNlgXd6wZtxGjx_mAaTcOJ4sxi911HNr91yT64LrGO9=w43-h43-p-rp-mo-br100" alt="Raju Thakuri" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">R</div>
+                <span class="review-name">Raju Thakuri</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">4 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Tiles grounding was done properly with great attention to detail. The pool was refilled with fresh water and is now clean and readtpy to use. Good quality work done. Thank you team." data-short="Tiles grounding was done properly with great attention to detail. The pool was refilled with fresh water and is now clean and readtpy to use. Good quality work ...">
+                <p class="review-body">Tiles grounding was done properly with great attention to detail. The pool was refilled with fresh water and is now clean and readtpy to use. Good quality work ...</p>
+                <button class="show-more" onclick="toggleReview(this)">Show more</button>
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjUqt3N_MZ2TxpqwLYbpgHvM8Jxt0XpnKhUy9nfdrPzcANR3vBvUgg=w43-h43-p-rp-mo-br100" alt="Ameena Sulthana" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Ameena Sulthana</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">4 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very satisfied with the pool light installation. The LED lights enhance the beauty of the swimming pool and consume less power. Safe, durable, and great work." data-short="Very satisfied with the pool light installation. The LED lights enhance the beauty of the swimming pool and consume less power. Safe, durable, and great work.">
+                <p class="review-body">Very satisfied with the pool light installation. The LED lights enhance the beauty of the swimming pool and consume less power. Safe, durable, and great work.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJoRci109Q0exXOLxP8hBfeAyzzrVkVekxbSXhLjdan4iX9=w43-h43-p-rp-mo-br100" alt="Innocent Me" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">I</div>
+                <span class="review-name">Innocent Me</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">Edited 5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="The team replaced my swimming pool lights with excellent finishing. The new lighting looks bright, modern, and perfectly installed. Highly recommended." data-short="The team replaced my swimming pool lights with excellent finishing. The new lighting looks bright, modern, and perfectly installed. Highly recommended.">
+                <p class="review-body">The team replaced my swimming pool lights with excellent finishing. The new lighting looks bright, modern, and perfectly installed. Highly recommended.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJwJ-XvGjoCGRiJYlrhjvE3TEtX0Q8GWE4HTWlT3xaBKsOzEQ=w43-h43-p-rp-mo-br100" alt="Humail Butt" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">H</div>
+                <span class="review-name">Humail Butt</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="They repaired our heater chiller properly and is working perfectly now. Satisfied with the service. Highly recommended." data-short="They repaired our heater chiller properly and is working perfectly now. Satisfied with the service. Highly recommended.">
+                <p class="review-body">They repaired our heater chiller properly and is working perfectly now. Satisfied with the service. Highly recommended.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJC07Pc5r7UfvMV6nCVYf-WDQu1KCpgFScf0alYlGflXBmKrA=w43-h43-p-rp-mo-br100" alt="Alice" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Alice</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Great service from Amar and his team. Everything was done on time and finished to an excellent standard. Really happy we contacted them!" data-short="Great service from Amar and his team. Everything was done on time and finished to an excellent standard. Really happy we contacted them!">
+                <p class="review-body">Great service from Amar and his team. Everything was done on time and finished to an excellent standard. Really happy we contacted them!</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjVawHc3SfPSnP_GVM0uJW0rBIz7oCcMpOaqTc0_KaL_Gj6XXEf1=w43-h43-p-rp-mo-br100" alt="David Snow" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">D</div>
+                <span class="review-name">David Snow</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Swimming pool tiles were replaced professionally with neat finishing. The pool now looks fresh and well-maintained." data-short="Swimming pool tiles were replaced professionally with neat finishing. The pool now looks fresh and well-maintained.">
+                <p class="review-body">Swimming pool tiles were replaced professionally with neat finishing. The pool now looks fresh and well-maintained.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjW_1NP_PmqN0GFka2cz7TZaO5iAdoApEtTEaRwJzcNmrtv8pxLM=w43-h43-p-rp-mo-br100" alt="Razel Cataluna" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">R</div>
+                <span class="review-name">Razel Cataluna</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Efficient and professional repair of my pool heater-chiller. Everything runs perfectly now.
+Thank you Best Choice." data-short="Efficient and professional repair of my pool heater-chiller. Everything runs perfectly now.
+Thank you Best Choice.">
+                <p class="review-body">Efficient and professional repair of my pool heater-chiller. Everything runs perfectly now.
+Thank you Best Choice.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocLfEnRK_-0Spri7OynX4y9_qy-NxLyT09qzuFiYCq0abU3Vnw=w43-h43-p-rp-mo-br100" alt="Kumar Suresh" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">K</div>
+                <span class="review-name">Kumar Suresh</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Their team is professional and knows how to get the job done within time frame and no compromise on the quality. …" data-short="Their team is professional and knows how to get the job done within time frame and no compromise on the quality. …">
+                <p class="review-body">Their team is professional and knows how to get the job done within time frame and no compromise on the quality. …</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJ7h7IcB2vrEy7lHc_MHAVQ88L977OsaINJPxuAkZAsFw9vJA=w43-h43-p-rp-mo-br100" alt="Naeem Shah" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">N</div>
+                <span class="review-name">Naeem Shah</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">3 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Fast service with neat and accurate tile work. Great job." data-short="Fast service with neat and accurate tile work. Great job.">
+                <p class="review-body">Fast service with neat and accurate tile work. Great job.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXhCv8z1ZLjBKQmkIZ-GADd2y1LA9VC74rca3Pp2gV3ILRqVFg=w43-h43-p-rp-mo-br100" alt="Merry rose Rosemarry" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">M</div>
+                <span class="review-name">Merry rose Rosemarry</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Today I called this company to clean my swimming pool and do little works for decoration.
+I got very surprised that they are such a professional staff and very kindly. …" data-short="Today I called this company to clean my swimming pool and do little works for decoration.
+I got very surprised that they are such a professional staff and very ...">
+                <p class="review-body">Today I called this company to clean my swimming pool and do little works for decoration.
+I got very surprised that they are such a professional staff and very ...</p>
+                <button class="show-more" onclick="toggleReview(this)">Show more</button>
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJ-XWbVa9qNZHq0InGZCJsZbAHec8ccJeWSUtztYzeCmxsafg=w43-h43-p-rp-mo-br100" alt="Hamada Mohamed" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">H</div>
+                <span class="review-name">Hamada Mohamed</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">6 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="It&#39;s a good swimming pool cleaning company.. satisfied.." data-short="It&#39;s a good swimming pool cleaning company.. satisfied..">
+                <p class="review-body">It&#39;s a good swimming pool cleaning company.. satisfied..</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjV4NwODeKfjz9h3ky27Qer9X0SrFC5MIQ9_OCLnp_Gp79iVMbNI=w43-h43-p-rp-mo-br100" alt="Maria coney capuyan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">M</div>
+                <span class="review-name">Maria coney capuyan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good service we are happy
+Thank you" data-short="Good service we are happy
+Thank you">
+                <p class="review-body">Good service we are happy
+Thank you</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocL2OvtrRvgUuCkksPqKUh6t7aFFLa1o9BN2jH3zYPvkwlbapQ=w43-h43-p-rp-mo-br100" alt="Cute Girl" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">C</div>
+                <span class="review-name">Cute Girl</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Thank you soo much best choice swimming pools. I had really good experience with them.
+I recommend all people to choose Best Choic swimming pool cleaning. All of them are very experienced and kind staff in this company" data-short="Thank you soo much best choice swimming pools. I had really good experience with them.
+I recommend all people to choose Best Choic swimming pool cleaning. All o...">
+                <p class="review-body">Thank you soo much best choice swimming pools. I had really good experience with them.
+I recommend all people to choose Best Choic swimming pool cleaning. All o...</p>
+                <button class="show-more" onclick="toggleReview(this)">Show more</button>
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocK9p8TxoiB0jcCTICREKGZAmOjJ9Vr3UAR6W1Ysa7RP2IgaeA=w43-h43-p-rp-mo-br100" alt="Supriya Nagaich" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">Supriya Nagaich</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very good service.." data-short="Very good service..">
+                <p class="review-body">Very good service..</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIdotkE3Jv55K6Md8mlv_odupmw8LtwmVoc97pOz9UllNZBEQ=w43-h43-p-rp-mo-br100" alt="Neldz Betita" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">N</div>
+                <span class="review-name">Neldz Betita</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Efficient service. I had a leakage issue in our pool and they did good job. Happily recommended and will use again.. 👍 …" data-short="Efficient service. I had a leakage issue in our pool and they did good job. Happily recommended and will use again.. 👍 …">
+                <p class="review-body">Efficient service. I had a leakage issue in our pool and they did good job. Happily recommended and will use again.. 👍 …</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocK2kKsVuwQmVDTjCEH7EuAaZ_ddclRDzMiwBif3mMyqd9I_Zw=w43-h43-p-rp-mo-br100" alt="divine Collection" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">D</div>
+                <span class="review-name">divine Collection</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very good and worth of money service did for my swimming pool recommend" data-short="Very good and worth of money service did for my swimming pool recommend">
+                <p class="review-body">Very good and worth of money service did for my swimming pool recommend</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWWIFvvjVPWDYVVdgx6ZY64XW8jFIm-pdxrYBoKKgGcASktYeIb_w=w43-h43-p-rp-mo-br100" alt="Naveed Khan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">N</div>
+                <span class="review-name">Naveed Khan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">4 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Best Service best cleaning" data-short="Best Service best cleaning">
+                <p class="review-body">Best Service best cleaning</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocKgsKJ10KqZJU7tXZUP3717iWSU-lJWfhqu7yIgvQogio4XSA=w43-h43-p-rp-mo-br100" alt="Yasir Hussain" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">Y</div>
+                <span class="review-name">Yasir Hussain</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Best choice swimming pool cleaning services best of the best in dubai . They repair my pool in very professional way . Excellent services . Highly recommend" data-short="Best choice swimming pool cleaning services best of the best in dubai . They repair my pool in very professional way . Excellent services . Highly recommend">
+                <p class="review-body">Best choice swimming pool cleaning services best of the best in dubai . They repair my pool in very professional way . Excellent services . Highly recommend</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjU4tAlEgUCwd5bzDIpHY45Tv3LfOrze5teWYwZVcBtuqyMRONAOWQ=w43-h43-p-rp-mo-br100" alt="Shan Bhatti" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">Shan Bhatti</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="I really got surprised when i visited very first time. In fact, service is incredible." data-short="I really got surprised when i visited very first time. In fact, service is incredible.">
+                <p class="review-body">I really got surprised when i visited very first time. In fact, service is incredible.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWv2L9eSvcUZBEZzLiy73--AfqM44tu4mbFEmSXPY18veTTOmGp=w43-h43-p-rp-mo-br100" alt="MJ Ujjal" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">M</div>
+                <span class="review-name">MJ Ujjal</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Professional and friendly staff to deal with my pool  will indeed be in safe hands. Thank you Mr Amar" data-short="Professional and friendly staff to deal with my pool  will indeed be in safe hands. Thank you Mr Amar">
+                <p class="review-body">Professional and friendly staff to deal with my pool  will indeed be in safe hands. Thank you Mr Amar</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjW2RtbsNLPYXCCm6u3LcfiL6FMz4pdk79JrsKczfyKUL45sXsku=w43-h43-p-rp-mo-br100" alt="rehman khan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">R</div>
+                <span class="review-name">rehman khan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Best choice swimming cleaning services best in dubai. Very professional staff. Highly recommend" data-short="Best choice swimming cleaning services best in dubai. Very professional staff. Highly recommend">
+                <p class="review-body">Best choice swimming cleaning services best in dubai. Very professional staff. Highly recommend</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXCDrdr0EWzqQ_p4-dL5NBiGdw26h6h_hwHqAMm3gvazR8QNkU=w43-h43-p-rp-mo-br100" alt="Dinesh Chhetri" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">D</div>
+                <span class="review-name">Dinesh Chhetri</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very professional best cleaning best service recommended" data-short="Very professional best cleaning best service recommended">
+                <p class="review-body">Very professional best cleaning best service recommended</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocLWM4Qw9WZxPhyss11lLZtH0BmmvSwoz5DLqvNq7IBUIBm7sQ=w43-h43-p-rp-mo-br100" alt="Hasnain Khan Leghari" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">H</div>
+                <span class="review-name">Hasnain Khan Leghari</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="For swimming pool clean and repair this company can do it for you and they are budget friendly 😉 …" data-short="For swimming pool clean and repair this company can do it for you and they are budget friendly 😉 …">
+                <p class="review-body">For swimming pool clean and repair this company can do it for you and they are budget friendly 😉 …</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocKqRCAyauFkHr7F400YSZ9tvy2gVPrOkcFL0GHoWJodezyoqw=w43-h43-p-rp-mo-br100" alt="Kashif Ali" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">K</div>
+                <span class="review-name">Kashif Ali</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">11 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Excellent service reliable best in dubai for cleaning" data-short="Excellent service reliable best in dubai for cleaning">
+                <p class="review-body">Excellent service reliable best in dubai for cleaning</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIlw1mv6pKvCLhjR6xcSPvNbVc0BLqQi6-P86jDpZcgPoi6QA=w43-h43-p-rp-mo-br100" alt="Ali shakeel" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Ali shakeel</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">4 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good renovation work" data-short="Good renovation work">
+                <p class="review-body">Good renovation work</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWW4uiZG7pW9uFRwBeuJnLh4BJBcMErLjzBHo5Cf3yKTc2iaIfi=w43-h43-p-rp-mo-br100" alt="Ronelda Betita" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">R</div>
+                <span class="review-name">Ronelda Betita</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Just say good IST very good for swimming pool service ." data-short="Just say good IST very good for swimming pool service .">
+                <p class="review-body">Just say good IST very good for swimming pool service .</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIeVLlIXjAAdew0MmN69-CsqXtclt9ldRLeHCCLlffFhgKSzw=w43-h43-p-rp-mo-br100" alt="Ani Niie" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Ani Niie</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">11 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very good service of swimming pool cleaning recommended" data-short="Very good service of swimming pool cleaning recommended">
+                <p class="review-body">Very good service of swimming pool cleaning recommended</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocLCdj-ObaG1fMMQGRZAJP4HOCssjTEN7IzjCHqKf6yNeDxfsQ=w43-h43-p-rp-mo-br100" alt="Muhammad Naseeb" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">M</div>
+                <span class="review-name">Muhammad Naseeb</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Perfect 👍 service on time very professional on time recommend their service …" data-short="Perfect 👍 service on time very professional on time recommend their service …">
+                <p class="review-body">Perfect 👍 service on time very professional on time recommend their service …</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjVswKbySReBN46h6ogRObCs9ZPhIs6TXxzYTFiFoyUylZBrsFYT=w43-h43-p-rp-mo-br100" alt="Shoaib Khosa" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">Shoaib Khosa</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good cleaning services best prices 👍 on time …" data-short="Good cleaning services best prices 👍 on time …">
+                <p class="review-body">Good cleaning services best prices 👍 on time …</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJOipZ_PPO0ex0LVfWHALxPuO6cVAp7PexHuZ9cAuHsQIFe5w=w43-h43-p-rp-mo-br100" alt="Aqib javed Aqib javed" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Aqib javed Aqib javed</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Nice and very good service of pool repair" data-short="Nice and very good service of pool repair">
+                <p class="review-body">Nice and very good service of pool repair</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIXiZwzl8zrr00HjB_N-khtELVT5uqeIvVqykT7L_gXyBDrZuWl=w43-h43-p-rp-mo-br100" alt="SACHIN SAJJAN" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">SACHIN SAJJAN</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Nicely clean my pool un dubai with in the time period good job" data-short="Nicely clean my pool un dubai with in the time period good job">
+                <p class="review-body">Nicely clean my pool un dubai with in the time period good job</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjVAgFZrdoUqr1-REioJin2zGjs4xBJ-qaO30S1ke2zQx7htSMBz=w43-h43-p-rp-mo-br100" alt="Gaming With RA" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">G</div>
+                <span class="review-name">Gaming With RA</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">4 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very good service" data-short="Very good service">
+                <p class="review-body">Very good service</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjVzb8HGM3P6ycuDiR7ClSMA8x8n9B6Uf_NwRss0GP1DIhFQ6gfC4w=w43-h43-p-rp-mo-br100" alt="Huzain Knm" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">H</div>
+                <span class="review-name">Huzain Knm</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">11 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="On time very professional work recommend their work" data-short="On time very professional work recommend their work">
+                <p class="review-body">On time very professional work recommend their work</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIwDxF4hfE73vqj82z1SubI32bParHzE_eBJ5sZJ6a29s3JZg=w43-h43-p-rp-mo-br100" alt="Umair Ashfaq" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">U</div>
+                <span class="review-name">Umair Ashfaq</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="i had a very good experience wit these people, they are one of the best in this market" data-short="i had a very good experience wit these people, they are one of the best in this market">
+                <p class="review-body">i had a very good experience wit these people, they are one of the best in this market</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocILRq61VbUHpI2_WVDpkLrQIbxFpiCsxoy-AjgvlZznBWvCJ5aY=w43-h43-p-rp-mo-br100" alt="Gita Rio" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">G</div>
+                <span class="review-name">Gita Rio</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="best choice swimming pool best cleaning service’s excellent work highly recommended" data-short="best choice swimming pool best cleaning service’s excellent work highly recommended">
+                <p class="review-body">best choice swimming pool best cleaning service’s excellent work highly recommended</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjUTEaFROnmiGZtQaV7QeoTQcJKCV6IAeMyxgv35WjqWpIRDm9xO=w43-h43-p-rp-mo-br100" alt="sharif rind" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">sharif rind</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good services of deep cleaning and affordable" data-short="Good services of deep cleaning and affordable">
+                <p class="review-body">Good services of deep cleaning and affordable</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjX8kQPrrkxOZUgao9kc-CPNR-YFXbDjaaRt4nc7G9VS3aPhP-t0=w43-h43-p-rp-mo-br100" alt="Parvej Khan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">P</div>
+                <span class="review-name">Parvej Khan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good swimming pool clean service doing the work on time 💪 …" data-short="Good swimming pool clean service doing the work on time 💪 …">
+                <p class="review-body">Good swimming pool clean service doing the work on time 💪 …</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjUykyzNwGVaHMfjlg2rBej8DRY5KDwsx7f-rGhHlEIjIO0qzveB=w43-h43-p-rp-mo-br100" alt="QURAN HAI IMAN[ENGINEER MOHAMMAD ALI MIRZA]" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">Q</div>
+                <span class="review-name">QURAN HAI IMAN[ENGINEER MOHAMMAD ALI MIRZA]</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Recommended best swimming cleaning and maintenance in dubai" data-short="Recommended best swimming cleaning and maintenance in dubai">
+                <p class="review-body">Recommended best swimming cleaning and maintenance in dubai</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjX4CvraG6xa39XJ5CJerjaqSUAZ9iQa4VDDEID-c4EqzVtChDvK_g=w43-h43-p-rp-mo-br100" alt="fazal e haq khan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">F</div>
+                <span class="review-name">fazal e haq khan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="The repair of this company is very professional for swimming pool nice work" data-short="The repair of this company is very professional for swimming pool nice work">
+                <p class="review-body">The repair of this company is very professional for swimming pool nice work</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjUVH5g-R_iRaZgR_f6UoM4BbKEDwv2ma590K96ulkJAOZ8uNTN1rA=w43-h43-p-rp-mo-br100" alt="Haider Gujjar" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">H</div>
+                <span class="review-name">Haider Gujjar</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Recommended best service of deep cleaning of pool" data-short="Recommended best service of deep cleaning of pool">
+                <p class="review-body">Recommended best service of deep cleaning of pool</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocL2mGpMCPUF4Ynxk5qu7Sr0JeLGZlHPNUvjoG-jSUcHKhUx-Q=w43-h43-p-rp-mo-br100" alt="Rvignesh Viki" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">R</div>
+                <span class="review-name">Rvignesh Viki</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Best swimming pool cleaning service&#39;s in dubai.highly recommended" data-short="Best swimming pool cleaning service&#39;s in dubai.highly recommended">
+                <p class="review-body">Best swimming pool cleaning service&#39;s in dubai.highly recommended</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXoJIiE1kbpnEY6nSOo9-CbyzzHIR194QTinfP0HqvcjKi4FN8=w43-h43-p-rp-mo-br100" alt="Rana Mubashir" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">R</div>
+                <span class="review-name">Rana Mubashir</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="The seen my swimming pool and check it after they repair it good" data-short="The seen my swimming pool and check it after they repair it good">
+                <p class="review-body">The seen my swimming pool and check it after they repair it good</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWAsBDrm-oqZTwJg-BVNlo9ZJSIDhJM-ApHzHYIRLTSIhUUaoE=w43-h43-p-rp-mo-br100" alt="Muhammad Fawad" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">M</div>
+                <span class="review-name">Muhammad Fawad</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Recommended best cleaning of swimming pool best prices" data-short="Recommended best cleaning of swimming pool best prices">
+                <p class="review-body">Recommended best cleaning of swimming pool best prices</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWSAcL4oP4HJtS1bEEvkNjnCa_yQqNz1wbOgkUNhiSeTWDl6z2mow=w43-h43-p-rp-mo-br100" alt="Syed Gulfam" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">Syed Gulfam</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">11 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Recommended best cleaning service on time" data-short="Recommended best cleaning service on time">
+                <p class="review-body">Recommended best cleaning service on time</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIlhW_RfO-Q_5qrz61gcKvWqqnypcXaBGsKDHvNeoMr97fIxA=w43-h43-p-rp-mo-br100" alt="Muhammad Azhar" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">M</div>
+                <span class="review-name">Muhammad Azhar</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good and excellent service of cleaning" data-short="Good and excellent service of cleaning">
+                <p class="review-body">Good and excellent service of cleaning</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJdsuE8p166w-hH2QxwdgiBjm3eaB4Ptz68JWr9ENwgtlDeXg=w43-h43-p-rp-mo-br100" alt="Justice Kunya" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">J</div>
+                <span class="review-name">Justice Kunya</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">11 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Its the best choice for the swimming pool cleaning...." data-short="Its the best choice for the swimming pool cleaning....">
+                <p class="review-body">Its the best choice for the swimming pool cleaning....</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJgHX_QJLCg3ihkZpfIvOr9Q72dfAOzE7_IukI5k-7jnF1rzQ=w43-h43-p-rp-mo-br100" alt="Dinalyn Bhattacharya" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">D</div>
+                <span class="review-name">Dinalyn Bhattacharya</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="I really enjoyed the place and I highly recommend all to visit the place." data-short="I really enjoyed the place and I highly recommend all to visit the place.">
+                <p class="review-body">I really enjoyed the place and I highly recommend all to visit the place.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocLDKcjG1cdd-V4k6djjB0GWh6mjzHi2i2QoUdJt1SZpAtjFng=w43-h43-p-rp-mo-br100" alt="Arjun Bishwakarma" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Arjun Bishwakarma</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good cleaning service if pool nice and neat good 👌 …" data-short="Good cleaning service if pool nice and neat good 👌 …">
+                <p class="review-body">Good cleaning service if pool nice and neat good 👌 …</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocK4QRLRy6VXYovvM0FT7qBoDMvwV_0tYPENk04ZHDQ5aEeiQA=w43-h43-p-rp-mo-br100" alt="Alfaressales" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Alfaressales</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Best services ever good luck" data-short="Best services ever good luck">
+                <p class="review-body">Best services ever good luck</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWkCLIa3dWTMTJ3CavX3qGjm6kMV_rJN-9QELxl6Xsbe4DgPRp0=w43-h43-p-rp-mo-br100" alt="Niru Paudel" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">N</div>
+                <span class="review-name">Niru Paudel</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good cleaning of swimming pool best service" data-short="Good cleaning of swimming pool best service">
+                <p class="review-body">Good cleaning of swimming pool best service</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocI2BKr3DY-X0oWWQKTN60roUeCFsGvADP7zVg_iRva7QfmePs0=w43-h43-p-rp-mo-br100" alt="Sabir Khan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">Sabir Khan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="They provide good service" data-short="They provide good service">
+                <p class="review-body">They provide good service</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJfed4hAVYlgAqhDeQXklgB9QDdmmS7lM99F6Q7cK3aead3ANQ=w43-h43-p-rp-mo-br100" alt="Clarence Rowan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">C</div>
+                <span class="review-name">Clarence Rowan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very good service of swimming pool cleaning" data-short="Very good service of swimming pool cleaning">
+                <p class="review-body">Very good service of swimming pool cleaning</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocLsaQjYWrKh_y65w2vL-EnueI1kqY1PqXk3FfCVec5gKONgHA=w43-h43-p-rp-mo-br100" alt="Shahzad Khan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">Shahzad Khan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very good swimming pool cleaning and maintenance" data-short="Very good swimming pool cleaning and maintenance">
+                <p class="review-body">Very good swimming pool cleaning and maintenance</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJiHngPoTf0YqqhXZXhd2cEtzSglrAnjhwtGMa6xtip4VbBAA=w43-h43-p-rp-mo-br100" alt="Arslan Falak" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Arslan Falak</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Nice pool cleaning service in dubai" data-short="Nice pool cleaning service in dubai">
+                <p class="review-body">Nice pool cleaning service in dubai</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXhcd3Kgs_6EO2je6sg5AGvfh0ybpJkz_QEjaGf7XS9PekmsVrn=w43-h43-p-rp-mo-ba3-br100" alt="shakeel Tariq" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">shakeel Tariq</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">Edited a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="this is good company and good services" data-short="this is good company and good services">
+                <p class="review-body">this is good company and good services</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJ7eR0eHvVOYQ8EhgFuWnqLa5KGn-GiVgBxXwcPDsideMI3vA=w43-h43-p-rp-mo-br100" alt="rushna Jeevan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">R</div>
+                <span class="review-name">rushna Jeevan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very good work and good quality" data-short="Very good work and good quality">
+                <p class="review-body">Very good work and good quality</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJ45HXgt44FUix03sK3A3wZpMlZvFlylNySeifm0qzJWcBFpQ=w43-h43-p-rp-mo-br100" alt="Ahmad sailm" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Ahmad sailm</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Nice Cleaning Services" data-short="Nice Cleaning Services">
+                <p class="review-body">Nice Cleaning Services</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjX7eaLRbop0mcgjzlXzn9Yf5Ep1ZR85nN_dnA2Zs5ddzHT0iX_S=w43-h43-p-rp-mo-br100" alt="Yasin Ahmad" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">Y</div>
+                <span class="review-name">Yasin Ahmad</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Nice swimming pool clean service" data-short="Nice swimming pool clean service">
+                <p class="review-body">Nice swimming pool clean service</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocI931q7VMH8TgmdobY0aeA0aHHiQXS8lOyTdBQY-rsTpcI4Bg=w43-h43-p-rp-mo-br100" alt="Ps Kumar" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">P</div>
+                <span class="review-name">Ps Kumar</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Their service is good" data-short="Their service is good">
+                <p class="review-body">Their service is good</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocKW3wBeQbs_SLYgQvNkoHaOgyrF0mDEoufQ45RG7FZNIEhUeQ=w43-h43-p-rp-mo-br100" alt="shenuni Theeksha" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">shenuni Theeksha</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="good work" data-short="good work">
+                <p class="review-body">good work</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIXV6athUFd8q6rJ5zkCfpNCA-Hh6VMgU5CActPa0KbSHt2vQ=w43-h43-p-rp-mo-br100" alt="Kamel Bengougam" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">K</div>
+                <span class="review-name">Kamel Bengougam</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Best one" data-short="Best one">
+                <p class="review-body">Best one</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXxABPcDVfa3lQMew_xvgoelzadbYq4hlt4OpL02rAPA7AxvSLYmQ=w43-h43-p-rp-mo-br100" alt="Azhar Ahmad" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Azhar Ahmad</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Qauilty swimming pool repair service" data-short="Qauilty swimming pool repair service">
+                <p class="review-body">Qauilty swimming pool repair service</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjWllK-zcEk4ZR3IXrv5H6z5YhPgRyqV_XuJFbdr4KNaZ1NbPaAw=w43-h43-p-rp-mo-br100" alt="Shining Stars" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">Shining Stars</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good service" data-short="Good service">
+                <p class="review-body">Good service</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXY36mnOQJ6Wc-Kli9I4HfYJtlznpATp-EgOpSMICVwfMp9CmfL=w43-h43-p-rp-mo-br100" alt="Glenda Del Mundo" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">G</div>
+                <span class="review-name">Glenda Del Mundo</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="good swimming pool clean and repair" data-short="good swimming pool clean and repair">
+                <p class="review-body">good swimming pool clean and repair</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIDBboN289gCxTH_U7sIpJSUaGTxblZVL8orok6wXYtJD7KwA=w43-h43-p-rp-mo-br100" alt="Haris Zia" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">H</div>
+                <span class="review-name">Haris Zia</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Great service." data-short="Great service.">
+                <p class="review-body">Great service.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJopZ_aj2YJm5tqrgo8G6pdCo12Uiwz1L7Mn4EO5QX5hF6czA=w43-h43-p-rp-mo-br100" alt="Saif Ashiq" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">Saif Ashiq</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Qauilty swimming pool cleaning service" data-short="Qauilty swimming pool cleaning service">
+                <p class="review-body">Qauilty swimming pool cleaning service</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocK4CJ7pbJ147C3xkS7il4a0K7zONJLNHPBCOpe3wdVbJji-Rw=w43-h43-p-rp-mo-br100" alt="I am ad" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">I</div>
+                <span class="review-name">I am ad</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a year ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very good swimming pool cleaning" data-short="Very good swimming pool cleaning">
+                <p class="review-body">Very good swimming pool cleaning</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocKNX661kZYifJcZlhZq9hJuvTAKvqm-YFmU9JKhFDfEDQzopg=w43-h43-p-rp-mo-br100" alt="Asif Khan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Asif Khan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good cleaning service of swimming pool" data-short="Good cleaning service of swimming pool">
+                <p class="review-body">Good cleaning service of swimming pool</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXbAFpZuyKIc7Q3XVtrOd7C0_g--LyGipTVCFnWEsCXesY_bPA=w43-h43-p-rp-mo-br100" alt="Mr. Ajman" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">M</div>
+                <span class="review-name">Mr. Ajman</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good service" data-short="Good service">
+                <p class="review-body">Good service</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjUrVStKjGg67ULwGEjnffcrcH5gcR0MeTE08ceMamHE4iE4D2w2=w43-h43-p-rp-mo-br100" alt="Tassavoor 4" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">T</div>
+                <span class="review-name">Tassavoor 4</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 years ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Good swimming pool repair" data-short="Good swimming pool repair">
+                <p class="review-body">Good swimming pool repair</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJ5iKmooBRMZFWkJ_IuRtbeLgEHXGBF5yv_I7u4oJOevYyZoA=w43-h43-p-rp-mo-br100" alt="Moutiou Adepoju" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">M</div>
+                <span class="review-name">Moutiou Adepoju</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a month ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Nice and fast" data-short="Nice and fast">
+                <p class="review-body">Nice and fast</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocKJP6JbzE2pM6gMr7EDtZkRiVM-eExfTZCzTBDOzyIIRRkD8Q=w43-h43-p-rp-mo-br100" alt="Vx Venom" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">V</div>
+                <span class="review-name">Vx Venom</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a month ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Very good in tiles replace." data-short="Very good in tiles replace.">
+                <p class="review-body">Very good in tiles replace.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocL2Bo4Cc_rw3TnCZcu4Z5K8zuUfB0iRzYHZ-SDTP79BqOde7Q=w43-h43-p-rp-mo-br100" alt="Mildred Pagbilao" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">M</div>
+                <span class="review-name">Mildred Pagbilao</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="Best swimming pool construction company in dubai, highly recommend" data-short="Best swimming pool construction company in dubai, highly recommend">
+                <p class="review-body">Best swimming pool construction company in dubai, highly recommend</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocKxBbgejRK3DIS6NoCQ_V4yPfxZ4E88Qp9oIWLA1eHnuVtBSw=w43-h43-p-rp-mo-br100" alt="Jabbar Hussain" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">J</div>
+                <span class="review-name">Jabbar Hussain</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">2 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="They are very expert in swimming pool tile work…
+
+Thank you team" data-short="They are very expert in swimming pool tile work…
+
+Thank you team">
+                <p class="review-body">They are very expert in swimming pool tile work…
+
+Thank you team</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjW4dEshmY_CPq-Br_Ep4LLy-8FUk3tvetZ2oUhlM6qcS_2I5Jw=w43-h43-p-rp-mo-br100" alt="Abdul Samad" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Abdul Samad</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">4 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="👌👌 …" data-short="👌👌 …">
+                <p class="review-body">👌👌 …</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjUHq_tHgZwt9aj-AtzS1fwOGtPmvXWjAug_RdBo71qaMPVP0wQx=w43-h43-p-rp-mo-br100" alt="Rais Khan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">R</div>
+                <span class="review-name">Rais Khan</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">a month ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="You please the bone." data-short="You please the bone.">
+                <p class="review-body">You please the bone.</p>
+                
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJ_w8SYP7oQlr4uEHHyGPNlLtxcGXRpmGEVHuIVz6ZxsBcHIw=w43-h43-p-rp-mo-br100" alt="Sushma Rai" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">S</div>
+                <span class="review-name">Sushma Rai</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-top">
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span class="review-time">5 months ago</span>
+                <svg class="google-g" viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="review-text" data-full="We had a very good experience with the team at Best Choice. They restored our pool and did the work super fast and to a very good standard. I would recommend them 👌
+
+They also did an amazing job with cleaning up our very tall palm trees!" data-short="We had a very good experience with the team at Best Choice. They restored our pool and did the work super fast and to a very good standard. I would recommend th...">
+                <p class="review-body">We had a very good experience with the team at Best Choice. They restored our pool and did the work super fast and to a very good standard. I would recommend th...</p>
+                <button class="show-more" onclick="toggleReview(this)">Show more</button>
+            </div>
+            <div class="review-author">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocI_O9GIUD2neMOWDqxB_tbwrNYcWbYMf5hfi5lrFkrp4qOTvQ=w43-h43-p-rp-mo-ba3-br100" alt="Abbie Stewart" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;" loading="lazy">
+                <div class="review-avatar-fallback" style="display:none">A</div>
+                <span class="review-name">Abbie Stewart</span>
+            </div>
+        </div>
+                    </div>
+                </div>
+                <button class="reviews-nav next" id="rev-next" aria-label="Next">&#8250;</button>
+            </div>
+            <div class="reviews-footer">
+                <div class="reviews-dots" id="rev-dots"></div>
+                <div class="reviews-counter" id="rev-counter">1 / 80</div>
+            </div>
+        </div>
+        <style>
+        .reviews-tabs{display:flex;gap:0;border-bottom:2px solid #e5e7eb;margin-bottom:20px}
+        .reviews-tab{padding:10px 20px;font-size:13px;font-weight:600;color:#6b7280;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;font-family:Montserrat,sans-serif}
+        .reviews-tab.active{color:#1a1a1a;border-bottom-color:#1a1a1a}
+        .reviews-tab.google-tab{display:flex;align-items:center;gap:6px}
+        .reviews-aggregate{display:flex;align-items:center;gap:10px;padding:16px 0 24px;border-bottom:1px solid #e5e7eb;margin-bottom:32px}
+        .agg-stars{color:#f59e0b;font-size:22px;letter-spacing:2px}
+        .agg-score{font-size:20px;font-weight:900}
+        .agg-count{font-size:14px;color:#6b7280}
+        .reviews-carousel-wrap{position:relative;display:flex;align-items:center;gap:12px}
+        .reviews-nav{flex-shrink:0;width:40px;height:40px;border-radius:50%;border:1px solid #e5e7eb;background:#fff;font-size:24px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#374151;transition:border-color .2s,color .2s}
+        .reviews-nav:hover{border-color:#4338ca;color:#4338ca}
+        .reviews-nav:disabled{opacity:.3;cursor:default}
+        .reviews-track-outer{flex:1;overflow:hidden}
+        .reviews-track{display:flex;gap:20px;transition:transform .3s ease}
+        .review-card{flex:0 0 calc(33.333% - 14px);background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:14px;min-width:0;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+        @media(max-width:768px){.review-card{flex:0 0 100%}}
+        @media(min-width:769px) and (max-width:1023px){.review-card{flex:0 0 calc(50% - 10px)}}
+        .review-card-top{display:flex;align-items:center;gap:8px}
+        .review-stars{color:#f59e0b;font-size:14px;flex:1}
+        .review-time{font-size:12px;color:#9ca3af;white-space:nowrap}
+        .review-text{flex:1}
+        .review-body{font-size:13px;color:#374151;line-height:1.6;margin:0}
+        .show-more{background:none;border:none;padding:4px 0 0;font-size:13px;font-weight:700;color:#1a1a1a;text-decoration:underline;cursor:pointer;display:block}
+        .review-author{display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:14px;border-top:1px solid #f3f4f6}
+        .review-author img{width:36px;height:36px;border-radius:50%;object-fit:cover;flex-shrink:0}
+        .review-avatar-fallback{width:36px;height:36px;border-radius:50%;background:#4338ca;color:#fff;font-weight:900;font-size:14px;align-items:center;justify-content:center;flex-shrink:0}
+        .review-name{font-size:13px;font-weight:700;color:#111827}
+        .reviews-footer{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:24px}
+        .reviews-dots{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;max-width:220px}
+        .rev-dot{width:8px;height:8px;border-radius:50%;background:#d1d5db;cursor:pointer;transition:background .2s,width .2s;border:none;padding:0}
+        .rev-dot.active{background:#4338ca;width:20px;border-radius:4px}
+        .reviews-counter{font-size:12px;color:#9ca3af;font-weight:600;white-space:nowrap}
+        @media(prefers-reduced-motion:reduce){.reviews-track{transition:none}}
+        </style>
+        <script>
+        (function(){
+            var track=document.getElementById('rev-track');
+            var cards=track.querySelectorAll('.review-card');
+            var total=cards.length;
+            var dotsEl=document.getElementById('rev-dots');
+            var counter=document.getElementById('rev-counter');
+            var current=0;
+            function vis(){return window.innerWidth>=1024?3:window.innerWidth>=769?2:1;}
+            function maxI(){return Math.max(0,total-vis());}
+            function buildDots(){
+                dotsEl.innerHTML='';
+                var pages=maxI()+1;
+                var show=Math.min(pages,10);
+                for(var i=0;i<show;i++){
+                    var d=document.createElement('button');
+                    d.className='rev-dot'+(i===Math.min(current,show-1)?' active':'');
+                    d.setAttribute('aria-label','Page '+(i+1));
+                    d.dataset.i=i;
+                    d.onclick=function(){goTo(+this.dataset.i);};
+                    dotsEl.appendChild(d);
+                }
+                counter.textContent=(current+1)+' / '+total;
+            }
+            function goTo(i){
+                current=Math.max(0,Math.min(i,maxI()));
+                var gap=20;
+                var w=cards[0].offsetWidth+gap;
+                track.style.transform='translateX(-'+(current*w)+'px)';
+                document.getElementById('rev-prev').disabled=current===0;
+                document.getElementById('rev-next').disabled=current>=maxI();
+                buildDots();
+            }
+            document.getElementById('rev-prev').onclick=function(){goTo(current-1);};
+            document.getElementById('rev-next').onclick=function(){goTo(current+1);};
+            window.addEventListener('resize',function(){current=Math.min(current,maxI());goTo(current);});
+            window.toggleReview=function(btn){
+                var div=btn.parentElement;
+                var p=div.querySelector('.review-body');
+                if(btn.textContent==='Show more'){p.textContent=div.dataset.full;btn.textContent='Show less';}
+                else{p.textContent=div.dataset.short;btn.textContent='Show more';}
+            };
+            goTo(0);
+        })();
+        </script>
     </section>
 
     <section class="py-16 bg-[#1a1a1a] text-white">
